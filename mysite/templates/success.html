@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block title %}My Todos{% endblock %}
+
+{% block content %}
+
+<br><br><br><br><br>
+
+<div class="jumbotron alert alert-success ">
+    <div class="container">
+        <h1 class="display-4">Updated Successfully</h1>
+        
+        <p class="lead">If you want to add new Todos, Press the button below.<p>
+        <a href="{% url 'home' %}" class="btn btn-lg btn-outline-success">Add new Todos</a>
+    </div>
+</div>
+
+
+
+
+
+
+
+{% endblock %}

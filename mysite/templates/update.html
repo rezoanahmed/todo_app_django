@@ -5,7 +5,11 @@
 
 
 
-
+<form action="" method="POST">
+    {{ update_todo }}
+    {% csrf_token %}
+    <input type="submit" value="submit" class="btn btn-sm btn-outline-success">
+</form>
 
 
 
