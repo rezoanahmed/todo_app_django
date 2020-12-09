@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% block title %}My Todos{% endblock %}
+
+{% block content %}
+<div class="jumbotron alert alert-dark ">
+
+    <form action="" method="POST" class="form-control form-control-lg" type="text" placeholder=".form-control-lg">
+        {% csrf_token %}
+        {{ add_todos }}
+        <button type="submit" value="Add" class="btn btn-sm btn-outline-success">Add</button>
+    </form><br><br><br>
+
+
+    {% for i in todos %}
+
+    <ul>
+        <li><h3>{{i.name}}</h3></li>
+        <a href="" class=" btn btn-sm btn-outline-success">update</a> <a href="{% url 'delete' %}" class=" btn  btn-sm btn-outline-danger">delete</a>
+    </ul>
+
+    {% endfor %}
+</div>
+
+
+
+
+
+
+
+{% endblock %}
