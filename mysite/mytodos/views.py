@@ -2,6 +2,8 @@ from django.shortcuts import render
 from mytodos.models import *
 from mytodos.forms import *
 # Create your views here.
+
+
 def home(request):
     todo_list = todo.objects.all()
     add_todos = add_todo()
