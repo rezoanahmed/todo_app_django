@@ -1,0 +1,2 @@
+web: gunicorn mysite.wsgi.application
+# mysite.wsgi.application from settings.py
